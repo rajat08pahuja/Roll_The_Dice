@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.game-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.game-title {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgba(210, 206, 206, 0.919);
+    font-size: 400%;
+}
+
+.dice-dashboard {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.dice-dashboard img {
+    display: inline-block;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+.dice-dashboard>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+    height: 100%;
+    width: 30%;
+}
+
+.dice-choose-container {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.dice-chooser {
+    height: 30%;
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    margin-right: 4rem;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    color: white;
+    cursor: pointer;
+}
+
+.msg-container {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(210, 206, 206, 0.919);
+}
+
+@media only screen and (max-width: 600px) {
+    .dice-chooser {
+        height: 18%;
+        width: 11%;
+        font-size: 100%;
+    }
+
+    .game-title {
+        font-size: 250%;
+    }
+
+    .dice-dashboard>div {
+        font-size: 100%;
+    }    
+
+    .msg-container {
+        font-size: 150%;
+    }
+}
